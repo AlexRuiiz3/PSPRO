@@ -1,0 +1,54 @@
+Microsoft Windows [Versi¢n 10.0.19042.1237]
+(c) Microsoft Corporation. Todos los derechos reservados.
+
+C:\Users\aruiz\Documents\GitHub\PSPRO>dir
+ El volumen de la unidad C no tiene etiqueta.
+ El n£mero de serie del volumen es: DE77-ACB8
+
+ Directorio de C:\Users\aruiz\Documents\GitHub\PSPRO
+
+01/10/2021  13:29    <DIR>          .
+01/10/2021  13:29    <DIR>          ..
+22/09/2021  14:13               301 .classpath
+01/10/2021  13:29                 0 .ficheroSalida.txt
+24/09/2021  12:54                66 .gitattributes
+24/09/2021  13:13               392 .project
+24/09/2021  12:57    <DIR>          .settings
+01/10/2021  13:00    <DIR>          bin
+29/09/2021  12:44                26 comandos.txt
+24/09/2021  13:43                 0 Hola.txt
+24/09/2021  13:44                 4 Hola2.txt
+24/09/2021  12:54                10 README.md
+01/10/2021  13:25    <DIR>          src
+               8 archivos            799 bytes
+               5 dirs  18.428.731.392 bytes libres
+
+C:\Users\aruiz\Documents\GitHub\PSPRO>dir *.txt
+ El volumen de la unidad C no tiene etiqueta.
+ El n£mero de serie del volumen es: DE77-ACB8
+
+ Directorio de C:\Users\aruiz\Documents\GitHub\PSPRO
+
+01/10/2021  13:29                 0 .ficheroSalida.txt
+29/09/2021  12:44                26 comandos.txt
+24/09/2021  13:43                 0 Hola.txt
+24/09/2021  13:44                 4 Hola2.txt
+               4 archivos             30 bytes
+               0 dirs  18.428.731.392 bytes libres
+
+C:\Users\aruiz\Documents\GitHub\PSPRO>dir /a:d
+ El volumen de la unidad C no tiene etiqueta.
+ El n£mero de serie del volumen es: DE77-ACB8
+
+ Directorio de C:\Users\aruiz\Documents\GitHub\PSPRO
+
+01/10/2021  13:29    <DIR>          .
+01/10/2021  13:29    <DIR>          ..
+29/09/2021  14:34    <DIR>          .git
+24/09/2021  12:57    <DIR>          .settings
+01/10/2021  13:00    <DIR>          bin
+01/10/2021  13:25    <DIR>          src
+               0 archivos              0 bytes
+               6 dirs  18.428.731.392 bytes libres
+
+C:\Users\aruiz\Documents\GitHub\PSPRO>

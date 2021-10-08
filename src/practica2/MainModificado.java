@@ -1,8 +1,6 @@
 package practica2;
 
-import java.io.File;
 import java.io.IOException;
-import java.util.concurrent.TimeUnit;
 
 //cada 5 segundo comprobar si esta el proceso vivo y en consola mostrar Proceso en ejecucion
 public class MainModificado {

@@ -1,0 +1,3 @@
+dir
+dir *.txt
+dir /a:d
