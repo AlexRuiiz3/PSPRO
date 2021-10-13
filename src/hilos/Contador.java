@@ -4,11 +4,11 @@ public class Contador {
 
 	private int cuenta = 0;
 	
-	public int getCuenta() {
+	synchronized public int getCuenta() {
 		return cuenta;
 	}
 	
-	public void incrementa() {
+	synchronized public void incrementa() {
 		cuenta++;
 	}
 	
