@@ -11,9 +11,10 @@ public class Productor implements Runnable{
 	@Override
 	public void run() {
 		while(true) {
+			int[] datoo = producirDato();
 			synchronized (this.datos) {
 				
-				while(!datos.maximoAlcanzado()) {
+				while(datos.maximoAlcanzado()) {
 					
 					try {
 						datos.wait();
@@ -21,14 +22,14 @@ public class Productor implements Runnable{
 						e.printStackTrace();
 					}
 				}
-				datos.put(producirDato());
+				datos.put(datoo);
 				datos.notifyAll();
 			}			
 		}
 	}
 	
 	private int[] producirDato() {
-		int[] dato = new int[100];
+		int[] dato = new int[1000];
 		
 		for (int i = 0; i < dato.length; i++) {
 			dato[i] = (int) (Math.random() * 10001); //Entre 0 y 10000 excluido en 10001

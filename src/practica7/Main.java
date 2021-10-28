@@ -7,7 +7,11 @@ public class Main {
 		
 		Contenedor c = new Contenedor();
 
+		Thread productor = new Thread(new Productor(c));
+		Thread consumidor = new Thread(new Consumidor(c));
 		
+		productor.start();
+		consumidor.start();
 		
 	}
 }

@@ -3,7 +3,8 @@ package practica7;
 public class Consumidor implements Runnable{
 
 	private final Contenedor datos;
-	int sumaTotal = 0;
+	private int[] array;
+	private int sumaTotal = 0;
 	
 	public Consumidor(Contenedor datos) {
 		this.datos = datos;
@@ -15,7 +16,7 @@ public class Consumidor implements Runnable{
 		while(true) {
 			synchronized (this.datos) {
 				
-				while(!datos.vacio()) {
+				while(datos.vacio()) {
 					
 					try {
 						datos.wait();
@@ -23,18 +24,20 @@ public class Consumidor implements Runnable{
 						e.printStackTrace();
 					}
 				}
-				consumirDatos();
-				datos.notifyAll();
+				this.datos.notify();
+				array = datos.get();
+				sumaTotal = consumirDatos(array);
+				System.out.println("Total suma: "+sumaTotal);
 			}			
 		}
 	}
 	
-	public int consumirDatos() {
-		int[] dato = datos.get();
+	public int consumirDatos(int[] dato) {
 		int suma = 0;
-	
-		for (int i = 0; i < dato.length; i++) {
-			suma += dato[i];
+		int j = 0;
+		for (int i = 1; i < dato.length; i++) {
+			suma += dato[i] +dato[j];
+			j++;
 		}
 		return suma;
 	}

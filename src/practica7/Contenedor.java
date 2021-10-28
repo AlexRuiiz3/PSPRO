@@ -6,7 +6,7 @@ import java.util.List;
 public class Contenedor {
 
 	private int MAXIMO = 10;
-	private final List<int[]> datos = new ArrayList<int[]>();
+	private final List<int[]> datos = new ArrayList<>();
 	
 
 	synchronized public void put(int[] valor) {
