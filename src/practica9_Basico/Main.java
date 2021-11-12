@@ -17,7 +17,7 @@ public class Main {
 		}
 		
 		for (int i = 0; i < hilos.size(); i++) {
-			hilos.get(i).start();
+			hilos.get(i).start(); //Se genera la estructura del hilo en el monitor y este luego los gestiona de forma aleatoria si todos tienen la misma prioridad
 		}
 		
 		for (int i = 0; i < hilos.size(); i++) {
