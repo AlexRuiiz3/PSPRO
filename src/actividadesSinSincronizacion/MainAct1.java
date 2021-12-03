@@ -7,9 +7,14 @@ public class MainAct1 {
 
 	public static void main(String[] args) {	
 		ArrayList<Thread> listaHilos = new ArrayList<Thread>();
-		
-		for (int i = 0; i < 20; i++) {
-			listaHilos.add(new Thread(new HiloAct1(generarArrayEntero())));
+		int contPrioridad = 10;
+
+		for (int i = 0; i < 25; i++) {
+			Thread hilo = new Thread(new HiloAct1(generarArrayEntero()));
+			if(i < contPrioridad) {
+				hilo.setPriority(Thread.MAX_PRIORITY);
+			}
+			listaHilos.add(hilo);
 		}
 		
 		 for (Thread hiloAct1 : listaHilos) {

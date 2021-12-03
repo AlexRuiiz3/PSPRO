@@ -14,11 +14,9 @@ public class HiloAct1 implements Runnable{
 
 	@Override
 	public void run() {
-		System.out.println("Soy el hilo "+id);
-		
 		System.out.println("Numero maximo del "+id+" --> "+numeroMaximo());
-		System.out.println("Numero minimo del "+id+"--> "+numeroMinimo());
-		System.out.println("Media del "+id+" --> "+calcularMedia());
+		/*System.out.println("Numero minimo del "+id+"--> "+numeroMinimo());
+		System.out.println("Media del "+id+" --> "+calcularMedia());*/
 	}
 	
 	private double calcularMedia() {
