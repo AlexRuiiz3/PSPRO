@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="Actividades/src"/>
+	<classpathentry kind="src" path="Examen1PSPRO/src"/>
+	<classpathentry kind="src" path="Unidad Redes PSPRO/src"/>
+	<classpathentry kind="output" path="Actividades/bin"/>
+</classpath>
